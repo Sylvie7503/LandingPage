@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills, Hobbies & Interests</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background: #f4eee8;
+    color: #6d5b47;
+}
+
+
+.container {
+    display: flex;
+    width: 35%;
+}
+
+.sidebar {
+    width: 250px;
+    background: #6d5b47;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    text-align: center;
+    position: relative;
+}
+
+.sidebar ul li a, .dropdown-btn {
+    display: block;
+    padding: 15px;
+    background: #decdbb;
+    color: #6d5b47;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sidebar ul li a:hover, .sidebar ul li .active, .dropdown-btn:hover {
+    background: #ffffff;
+    color: #6d5b47;
+}
+
+
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    padding: 10px;
+    background: #decdbb;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+#dropdown-toggle {
+    display: none;
+}
+
+
+#dropdown-toggle:checked + .dropdown-btn + .dropdown-menu {
+    display: block;
+}
+
+
+.dropdown-btn .arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+#dropdown-toggle:checked + .dropdown-btn .arrow {
+    transform: rotate(180deg);
+}
+
+/* Responsive sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .sidebar ul li {
+        margin: 0 10px;
+    }
+}
+
+
+
+/* body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    background-color: #f4eee8;
+    color: #4a3828;
+    text-align: center;
+    padding: 20px;
+} */
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: calc(100% - 250px); /* Adjust width considering sidebar */
+    margin-left: 250px; /* To prevent overlap with sidebar */
+    padding: 20px;
+}
+
+.box {
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    background: linear-gradient(to right, #6d5b47, #a67c52);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+hr {
+    border: 2px solid #6d5b47;
+    width: 50%;
+    margin: 12px auto;
+}
+
+.skills, .hobbies, .interest {
+    background-color: #fdf8f2;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.h3_interest, .h3_hobbies, .h3_skills {
+    font-size: 30px;
+    font-weight: bold;
+    color: #5c4033;
+    margin-bottom: 12px;
+    font-family: cursive;
+}
+
+.sentence {
+    text-indent: 5%;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 20px;
+    color: #4d3a2a;
+    font-weight: 500;
+}
+sup{
+    color: red;
+}
+
+</style>
+<body>
+    
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="home.html" class="active">🏠 Home</a></li>
+                <li class="dropdown">
+                    <input type="checkbox" id="dropdown-toggle">
+                    <label for="dropdown-toggle" class="dropdown-btn">
+                        👤 Biography <span class="arrow">▼</span>
+                    </label>
+                    <ul class="dropdown-menu">
+                        <li><a href="biography.html#childhood">Childhood Years</a></li>
+                        <li><a href="biography.html#teenage">Teenage Years</a></li>
+                        <li><a href="biography.html#college">College Years</a></li>
+                    </ul>
+                </li>
+                <li><a href="skills.html">💼 Skills</a></li>
+                <li><a href="resume.html">📄 Resume</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    <div class="Content">
+        <!-- MOYA, PATRICK CHRISTOPHER -->
+        <!-- Class number: 29 -->
+        <!-- CIP1101-ITAD  -->
+        <div class="box">
+            <h1 class="title" align="center">“The Things I Enjoy and Want to Improve”</h1> 
+            <hr size="4" color="black">
+            
+            <section class="skills">
+                <h3 class="h3_skills">Skills</h3>
+                <p class="sentence">
+                    <sup>1</sup> I don’t have many skills, but I am good at communication, problem-solving, technical skills, adaptability, teamwork, and creativity. <sup>2</sup> I can manage my time properly, and I can work with others. <sup>3</sup> I try my best to finish tasks on time. <sup>4</sup> I am also patient when working on something difficult. <sup>5</sup> I know how to listen to instructions carefully. <sup>6</sup> I can think of ways to solve problems when needed. <sup>7</sup> I like learning new things, especially about technology. <sup>8</sup> I work well under pressure. <sup>9</sup> I can stay focused even when there are distractions. <sup>10</sup> I am also good at following directions from my teachers or teammates. <sup>11</sup> I always try to be responsible for my work. <sup>12</sup> I am willing to help others when needed. <sup>13</sup> I enjoy working in groups because teamwork makes tasks easier. <sup>14</sup> I try to be creative when solving problems. <sup>15</sup> I also know how to adapt when things don’t go as planned. <sup>16</sup> I listen to feedback so I can improve. <sup>17</sup> I always do my best to complete my work properly. <sup>18</sup> I try to stay organized with my tasks. <sup>19</sup> I want to keep improving my skills over time.  
+                </p>
+            </section>
+            
+            <section class="hobbies">
+                <h3 class="h3_hobbies">Hobbies</h3>
+                <p class="sentence">
+                    <sup>1</sup> My hobbies include playing games, mostly FPS games. <sup>2</sup> I enjoy playing online with my friends. <sup>3</sup> It is fun and helps me relax. <sup>4</sup> I also love listening to music. <sup>5</sup> Music helps me focus when I study. <sup>6</sup> I enjoy watching movies in my free time. <sup>7</sup> I prefer action and comedy movies. <sup>8</sup> Sometimes, I watch movies with my family. <sup>9</sup> I also like to exercise because it keeps me healthy. <sup>10</sup> Playing baseball is another hobby of mine. <sup>11</sup> I play baseball every Saturday with my friends. <sup>12</sup> It is a fun way to stay active. <sup>13</sup> I like to practice my batting skills. <sup>14</sup> Baseball also teaches me teamwork and discipline. <sup>15</sup> I enjoy going outside for a walk when I have time. <sup>16</sup> I sometimes try different sports to see what I like. <sup>17</sup> I also enjoy watching baseball games on TV. <sup>18</sup> When I have nothing to do, I try learning new things. <sup>19</sup> Playing video games is fun, but I also make sure to balance my time. <sup>20</sup> I try to spend my free time wisely.  
+                </p>
+            </section>
+            
+            <section class="interest">
+                <h3 class="h3_interest">Interests</h3>
+                <p class="sentence">
+                    <sup>1</sup> I want to focus on improving myself. <sup>2</sup> Learning more about the IT industry is my goal. <sup>3</sup> I want to gain more knowledge and skills. <sup>4</sup> At the same time, I also want to take care of my health. <sup>5</sup> Right now, I am interested in learning programming. <sup>6</sup> I plan to focus on one programming language. <sup>7</sup> I want to be good at it before learning another one. <sup>8</sup> I also want to create many projects. <sup>9</sup> I hope to finish several projects before my fourth year. <sup>10</sup> This will help me improve my skills. <sup>11</sup> I enjoy learning how different programs work. <sup>12</sup> Understanding how to code is very interesting. <sup>13</sup> I also like learning about new technology. <sup>14</sup> I want to be updated on the latest trends in IT. <sup>15</sup> I believe that practicing every day will help me improve. <sup>16</sup> I want to challenge myself with difficult coding problems. <sup>17</sup> I also want to work on real-life projects. <sup>18</sup> My goal is to be better in programming and problem-solving. <sup>19</sup> I hope to apply what I learn in the future.  
+                </p>
+            </section>
+        </div>
+        
+        
+    </div>
+</body>
+</html>

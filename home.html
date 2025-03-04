@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="xamp.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background: #f4eee8;
+    color: #6d5b47;
+}
+
+
+.container {
+    display: flex;
+    width: 250px;
+}
+
+.sidebar {
+    width: 250px;
+    background: #6d5b47;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    text-align: center;
+    position: relative;
+}
+
+.sidebar ul li a, .dropdown-btn {
+    display: block;
+    padding: 15px;
+    background: #decdbb;
+    color: #6d5b47;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sidebar ul li a:hover, .sidebar ul li .active, .dropdown-btn:hover {
+    background: #ffffff;
+    color: #6d5b47;
+}
+
+
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    padding: 10px;
+    background: #decdbb;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+#dropdown-toggle {
+    display: none;
+}
+
+
+#dropdown-toggle:checked + .dropdown-btn + .dropdown-menu {
+    display: block;
+}
+
+
+.dropdown-btn .arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+#dropdown-toggle:checked + .dropdown-btn .arrow {
+    transform: rotate(180deg);
+}
+
+/* Responsive sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+    .sidebar ul {
+        display: flex;
+        flex-direction: row;
+    }
+    .sidebar ul li {
+        margin: 0 10px;
+    }
+}
+
+
+</style>
+
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="home.html" class="active">🏠 Home</a></li>
+                <li class="dropdown">
+                    <input type="checkbox" id="dropdown-toggle">
+                    <label for="dropdown-toggle" class="dropdown-btn">
+                        👤 Biography <span class="arrow">▼</span>
+                    </label>
+                    <ul class="dropdown-menu">
+                        <li><a href="biography.html#childhood">Childhood Years</a></li>
+                        <li><a href="biography.html#teenage">Teenage Years</a></li>
+                        <li><a href="biography.html#college">College Years</a></li>
+                    </ul>
+                </li>
+                <li><a href="skills.html">💼 Skills</a></li>
+                <li><a href="resume.html">📄 Resume</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+</html>
