@@ -1,0 +1,479 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+/* Css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+
+/* Global Variables */
+:root{
+    --sideBGColor: #363A3D;
+    --themeColor: #00A78E;
+    --iconBGColor: #494E52;
+    --textColorWhite: #FFFFFF;
+    /* --bgColor: linear-gradient(to top,  #494E52, #A4AFB8); */
+    --bgColor: #494E52;
+}
+
+body{
+    background: var(--bgColor);
+    background-attachment: fixed;
+}
+
+/* ===== header ===== */
+header{
+    height: 100vh;
+    width: 300px;
+    padding: 15px 30px;
+    background-color: var(--sideBGColor);
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.4s;
+    z-index: 99;
+}
+header .profile{
+    text-align: center;
+    margin: 10px 0;
+}
+header .profile img{
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid var(--iconBGColor);
+
+}
+header .profile h1{
+    color: var(--textColorWhite);
+    font-weight: 600;
+}
+header .profile .social-icons a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+    background-color: var(--iconBGColor);
+    color: var(--textColorWhite);
+    font-size: 18px;
+    margin: 1.5px;
+    transition: 0.4s;
+}
+header .profile .social-icons a:hover{
+    background-color: var(--themeColor);
+}
+
+/* NavBar */
+header nav{
+    margin-top: 30px;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 7px 0;
+    color: lightgray;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+header nav ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+header nav ul li a:hover i{
+    color: var(--themeColor);
+}
+
+header .footer{
+    text-align: center;
+    background-color: var(--sideBGColor);
+    width: 300px;
+    color: lightgray;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s;
+}
+header .footer p a{
+    color: var(--themeColor);
+}
+
+/* Mobile nav */
+#MenuBtn{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color: var(--textColorWhite);
+    background-color: var(--themeColor);
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+    z-index: 999;
+    display: none;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 1050px){
+    header{
+        left: -300px;
+    }
+    header .footer{
+        left: -300px;
+    }
+    #MenuBtn{
+        display: block;
+    }
+}
+.mobile-nav-active header{
+    left: 0;
+}
+.mobile-nav-active .footer{
+    left: 0;
+}
+
+main{
+    margin-left: 300px;
+    transition: 0.3s;
+}
+@media only screen and (max-width: 1050px){
+    main{
+        margin-left: 0;
+    }
+}
+
+/* Drop down */
+header .dropdown{
+    color: lightgray;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+
+header .dropdown label:hover{
+    cursor: pointer;
+}
+
+header .dropdown i{
+    font-size: 20px;
+    padding: 7px 10px;
+    margin: 7px 0;
+}
+header .dropdown:hover label i{
+    color: var(--themeColor);
+    cursor: pointer;
+}
+
+header .dropdown-btn{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header .dropdown-menu{
+    display: none;
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+}
+
+header #dropdown-toggle{
+    display: none;
+}
+
+header #dropdown-toggle:checked + .dropdown-btn + .dropdown-menu {
+    display: block;
+}
+
+header .dropdown-btn .arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+header #dropdown-toggle:checked + .dropdown-btn .arrow {
+    transform: rotate(180deg);
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* ======== CONTACT SECTION START ========== */
+#contact{
+    padding: 70px 30px;
+}
+#contact .sub-heading ~ .sub-para{
+    color: var(--textColorWhite);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+#contact .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: var(--bgColor);
+    margin-top: 30px;
+}
+
+#contact .container .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .container .contact-info .contact-box{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+#contact .container .contact-info .contact-box a{
+    position: relative;
+    min-width: 60px;
+    height: 60px;
+    background: repeating-conic-gradient(from 27.5deg, #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact .container .contact-info .contact-box a::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from 117.5deg, #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50% );
+}
+#contact .container .contact-info .contact-box a::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: var(--iconBGColor);
+}
+
+#contact .container .contact-info .contact-box b{
+    position: absolute;
+    inset: 8px;
+    background: var(--themeColor);
+    z-index: 2;
+}
+#contact .container .contact-info .contact-box i{
+    position: relative;
+    color: var(--bgColor);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    
+}
+
+#contact .container .contact-info .contact-box .text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.2em;
+    color: var(--textColorWhite);
+    font-weight: 300;
+}
+
+#contact .container .contact-info .contact-box .text h3{
+    font-weight: 500;
+    color: var(--themeColor);
+}
+#contact .container .txt{
+    color: var(--textColorWhite);
+    margin-top: 50px;
+    font-weight: 500;
+    border-left: 50px solid var(--themeColor);
+    padding-left: 10px;
+    line-height: 16px;
+}
+
+#contact .container .social-icons{
+    position: relative;
+    display: flex;
+    gap: 30px;   
+    margin-top: 20px;
+}
+
+#contact .container .social-icons li {
+    list-style: none;
+}
+
+#contact .container .social-icons li a{
+    color: var(--textColorWhite);
+    font-size: 25px;
+    transition: 0.25s;
+}
+
+#contact .container .social-icons li a:hover{
+    color: var(--themeColor);
+    filter: drop-shadow(0 0 5px var(--themeColor));
+}
+
+#contact .container .contact-form {
+    position: relative;
+    width: 40%;
+    background: repeating-conic-gradient(from var(--a), #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50% );
+    animation: animate 6s linear infinite;
+    padding: 60px;
+}
+
+#contact .container .contact-form::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a), #01dbc2 0%, #01dbc2 10%, transparent 10%, transparent 50% );
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+}
+#contact .container .contact-form::after{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border: 20px solid var(--bgColor);
+    background: var(--sideBGColor);
+}
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+@keyframes animate{
+    0%{
+        --a: 0deg;
+    }
+    100%{
+        --a: 360deg;
+    }
+}
+
+#contact .container .contact-form form{
+    position: relative;
+    z-index: 10;
+}
+
+#contact .container .contact-form form h2{
+    font-size: 32px;
+    color: var(--textColorWhite);
+    font-weight: 500;
+}
+
+#contact .container .contact-form form .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;    
+}
+
+#contact .container .contact-form form .input-box input, 
+#contact .container .contact-form form .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 17px;
+    margin: 10px 0;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid var(--themeColor);
+    color: var(--themeColor);
+    outline: none;
+    resize: none;
+}
+
+#contact .container .contact-form form .input-box span{
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    margin: 10px 0;
+    font-size: 17px;
+    color: var(--textColorWhite);
+    transition: 0.5s;
+}
+#contact .container .contact-form form .input-box input:focus ~ span, 
+#contact .container .contact-form form .input-box textarea:focus ~ span,
+#contact .container .contact-form form .input-box input:valid ~ span, 
+#contact .container .contact-form form .input-box textarea:focus ~ span{
+    color: var(--themeColor);
+    font-size: 14px;
+    transform: translateY(-24px);
+}
+
+#contact .container .contact-form form .input-box input[type="submit"]{
+    width: 100%;
+    background: var(--themeColor);
+    color: var(--bgColor);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Mobile View */
+@media only screen and (max-width: 600px){
+    
+    #contact .container .contact-info .contact-box a{
+        min-width: 50px;
+        height: 55px;
+    }
+    #contact .container .contact-info .contact-box b{
+        inset: 6px;
+    }
+    #contact .container .contact-info .contact-box i{
+        font-size: 17px;
+        margin-top: 12px;
+    }
+    
+    #contact .container .contact-info .contact-box .text{
+        margin-left: 18px;
+        font-size: 1em;
+        font-weight: 300;
+    }
+    
+    #contact .container .contact-info .contact-box .text h3{
+        font-weight: 400;
+    }
+}
+@media only screen and (max-width: 900px){
+
+    #contact{
+        padding: 50px 10px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    #contact .container .contact-info,
+    #contact .container .contact-form{
+        width: 100%;
+    }
+    #contact .container .contact-form {
+        padding: 30px;
+    }
+    #contact .container .contact-form form{
+        padding: 10px;
+    }
+}
+/* ======== CONTACT SECTION END ========== */
+
