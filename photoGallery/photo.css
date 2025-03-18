@@ -271,6 +271,27 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 #gallery{
     padding: 70px 30px;
 }
+
+#gallery .sub-heading{
+    color: whitesmoke;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#gallery .divider{
+    width: 80px;
+    height: 4px;
+    background-color: var(--themeColor);
+    border-radius: 3px;
+}
+
+#gallery .divider ~ p{
+    color: var(--textColorWhite);
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
 #gallery .wrapper .box-area{
     color: var(--textColorWhite);
     margin-top: 50px;
