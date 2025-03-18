@@ -1,0 +1,329 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+/* Css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+
+/* Global Variables */
+:root{
+    --sideBGColor: #363A3D;
+    --themeColor: #00A78E;
+    --iconBGColor: #494E52;
+    --textColorWhite: #FFFFFF;
+    /* --bgColor: linear-gradient(to top,  #494E52, #A4AFB8); */
+    --bgColor: #494E52;
+}
+
+body{
+    background: var(--bgColor);
+    background-attachment: fixed;
+}
+
+/* ===== header ===== */
+header{
+    height: 100vh;
+    width: 300px;
+    padding: 15px 30px;
+    background-color: var(--sideBGColor);
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    transition: 0.4s;
+    z-index: 99;
+}
+header .profile{
+    text-align: center;
+    margin: 10px 0;
+}
+header .profile img{
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid var(--iconBGColor);
+
+}
+header .profile h1{
+    color: var(--textColorWhite);
+    font-weight: 600;
+}
+header .profile .social-icons a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 37px;
+    background-color: var(--iconBGColor);
+    color: var(--textColorWhite);
+    font-size: 18px;
+    margin: 1.5px;
+    transition: 0.4s;
+}
+header .profile .social-icons a:hover{
+    background-color: var(--themeColor);
+}
+
+/* NavBar */
+header nav{
+    margin-top: 30px;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin: 7px 0;
+    color: lightgray;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+}
+header nav ul li a i {
+    margin-right: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+header nav ul li a:hover i{
+    color: var(--themeColor);
+}
+
+header .footer{
+    text-align: center;
+    background-color: var(--sideBGColor);
+    width: 300px;
+    color: lightgray;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s;
+}
+header .footer p a{
+    color: var(--themeColor);
+}
+
+/* Mobile nav */
+#MenuBtn{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    color: var(--textColorWhite);
+    background-color: var(--themeColor);
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 20%);
+    z-index: 999;
+    display: none;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 1050px){
+    header{
+        left: -300px;
+    }
+    header .footer{
+        left: -300px;
+    }
+    #MenuBtn{
+        display: block;
+    }
+}
+.mobile-nav-active header{
+    left: 0;
+}
+.mobile-nav-active .footer{
+    left: 0;
+}
+
+main{
+    margin-left: 300px;
+    transition: 0.3s;
+}
+@media only screen and (max-width: 1050px){
+    main{
+        margin-left: 0;
+    }
+}
+
+/* Dropdown */
+header  .bio-dropdown{
+    color: lightgray;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+
+header .bio-dropdown .dropdown label:hover{
+    cursor: pointer;
+}
+
+header .bio-dropdown .dropdown i{
+    font-size: 20px;
+    padding: 7px 10px;
+    margin: 7px 0;
+}
+header .bio-dropdown .dropdown:hover label i{
+    color: var(--themeColor);
+    cursor: pointer;
+}
+
+header .bio-dropdown .dropdown-btn{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header .bio-dropdown .dropdown-menu{
+    display: none;
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+}
+
+header .bio-dropdown .dropdown #bio-dropdown-toggle{
+    display: none;
+}
+
+header .bio-dropdown .dropdown #bio-dropdown-toggle:checked + .dropdown-btn + .dropdown-menu {
+    display: block;
+}
+
+header .bio-dropdown .dropdown .dropdown-btn .arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+header .bio-dropdown .dropdown #bio-dropdown-toggle:checked + .dropdown-btn .arrow {
+    transform: rotate(180deg);
+}
+
+
+/* Dropdown */
+header  .skill-dropdown{
+    color: lightgray;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+}
+
+header .skill-dropdown .dropdown label:hover{
+    cursor: pointer;
+}
+
+header .skill-dropdown .dropdown i{
+    font-size: 20px;
+    padding: 7px 10px;
+    margin: 7px 0;
+}
+header .skill-dropdown .dropdown:hover label i{
+    color: var(--themeColor);
+    cursor: pointer;
+}
+
+header .skill-dropdown .dropdown-btn{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header .skill-dropdown .dropdown-menu{
+    display: none;
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+}
+
+header .skill-dropdown .dropdown #skill-dropdown-toggle{
+    display: none;
+}
+
+header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn + .dropdown-menu {
+    display: block;
+}
+
+header .skill-dropdown .dropdown .dropdown-btn .arrow {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn .arrow {
+    transform: rotate(180deg);
+}
+
+/* ----------------------------------------------------------------- */
+
+/* ====== PHOTO GALLERY START ====== */
+
+#gallery{
+    padding: 70px 30px;
+}
+#gallery .wrapper .box-area{
+    color: var(--textColorWhite);
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+#gallery .wrapper .box-area .box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#gallery .wrapper .box-area .box img{
+    width: 100%;
+    height: 100%;
+    border-radius: block;
+    transition: transform 0.5s;
+}
+
+#gallery .wrapper .box-area .box:hover img{
+    transform: scale(1.2);
+}
+
+#gallery .wrapper .box-area .box .overlay{
+    height: 0;
+    width: 100%;
+    background: linear-gradient(transparent, #1c1c1c 58%); 
+    border-radius: 10px;
+    position: absolute;  
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+#gallery .wrapper .box-area .box:hover .overlay{
+    height: 100%;
+}
+
+#gallery .wrapper .box-area .box .overlay h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 50%;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+/* ====== PHOTO GALLERY END ====== */
