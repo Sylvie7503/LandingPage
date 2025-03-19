@@ -305,6 +305,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     position: relative;
     overflow: hidden;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    height: 450px;
 }
 
 #gallery .wrapper .box-area .box img{
