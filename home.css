@@ -334,7 +334,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     z-index: 1;
 }
 #home .home-row h1{
-    font-size: 60px;
+    font-size: 40px;
     color: var(--textColorWhite);
     font-weight: 600;
     letter-spacing: -1px;
@@ -349,7 +349,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 
 #home .home-row p{
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 500;
 }
 
