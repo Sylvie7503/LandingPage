@@ -96,7 +96,9 @@ header nav ul li a i {
 header nav ul li a:hover i{
     color: var(--themeColor);
 }
-
+header footer{
+    margin-top: 60px;
+}
 header .footer{
     text-align: center;
     background-color: var(--sideBGColor);

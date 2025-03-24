@@ -13,13 +13,21 @@ html{
 
 /* Global Variables */
 :root{
-    --sideBGColor: #363A3D;
+    --sideBGColor: #272726;
+    --themeColor: #ABF600;
+    --iconBGColor: #404140;
+    --textColorWhite: #FFFFFF;
+    --bgColor: #212021;
+}
+
+/* :root{
+    --sideBGColor: #272727;
     --themeColor: #00A78E;
     --iconBGColor: #494E52;
     --textColorWhite: #FFFFFF;
-    /* --bgColor: linear-gradient(to top,  #494E52, #A4AFB8); */
+    --bgColor: linear-gradient(to top,  #494E52, #A4AFB8);
     --bgColor: #494E52;
-}
+} */
 
 body{
     background: var(--bgColor);
@@ -72,6 +80,7 @@ header .profile .social-icons a:hover{
 }
 
 /* NavBar */
+
 header nav{
     margin-top: 30px;
 }
@@ -95,6 +104,10 @@ header nav ul li a i {
 }
 header nav ul li a:hover i{
     color: var(--themeColor);
+}
+
+header footer{
+    margin-top: 60px;
 }
 
 header .footer{
@@ -317,6 +330,11 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 
 #gallery .wrapper .box-area .box:hover img{
     transform: scale(1.2);
+}
+
+#gallery .wrapper .box-area .box a{
+    color: var(--textColorWhite);
+    text-decoration: none;
 }
 
 #gallery .wrapper .box-area .box .overlay{

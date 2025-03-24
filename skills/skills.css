@@ -13,13 +13,20 @@ html{
 
 /* Global Variables */
 :root{
+    --sideBGColor: #272726;
+    --themeColor: #ABF600;
+    --iconBGColor: #404140;
+    --textColorWhite: #FFFFFF;
+    --bgColor: #212021;
+}
+/* :root{
     --sideBGColor: #363A3D;
     --themeColor: #00A78E;
     --iconBGColor: #494E52;
     --textColorWhite: #FFFFFF;
-    /* --bgColor: linear-gradient(to top,  #494E52, #A4AFB8); */
+    --bgColor: linear-gradient(to top,  #494E52, #A4AFB8);
     --bgColor: #494E52;
-}
+} */
 
 body{
     background: var(--bgColor);
@@ -96,7 +103,9 @@ header nav ul li a i {
 header nav ul li a:hover i{
     color: var(--themeColor);
 }
-
+header footer{
+    margin-top: 60px;
+}
 header .footer{
     text-align: center;
     background-color: var(--sideBGColor);
@@ -309,7 +318,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0px 20px rgba(0, 167, 142, 1);
+    box-shadow: 0 0px 20px rgb(33, 130, 65);
 }
 
 #skills .title h1{
@@ -375,11 +384,11 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 }
 
 #skills .skills-row a ~ i{
-    background-color: var(--iconBGColor);
+    background-color: var(--bgColor);
 }
 
 #skills .skills-row .thumbnails{
-    background-color: var(--iconBGColor);
+    background-color: var(--bgColor);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-top: 48px;
     display: flex;
