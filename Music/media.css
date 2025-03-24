@@ -350,74 +350,115 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     letter-spacing: 0.5px;
     font-weight: 400;
     margin-top: 15px;
+    margin-bottom: 50px;
 }
 
-#media .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+/* Hip hop songs start */
+#media .music-category{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 100px;
 }
-
-#media .container .beat-header{
-    padding-bottom: 30px;
-}
-
-#media .container .beat-header h1{
+#media .music-category .favourite .txt{
+    grid-column: span 3;
     text-align: center;
-    padding: 10px;
     color: var(--textColorWhite);
-    font-size: 30px;
-    letter-spacing: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 10px;    
 }
 
-
-
-#media .container .beat-header h1 ~ hr{
-    border: 2px solid var(--themeColor);
-    width: 30%;
-    margin: auto;
+#media .music-category .favourite {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
 }
 
-#media .container .music-category{
-    margin-bottom: 40px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 8px rgba(0, 167, 142, 1);
-}
-
-#media .container .music-category .audio-sample{
-    margin: 10px 0;
-    padding: 10px;
-}
-
-#media .container .music-category .audio-sample p{
-    color: var(--textColorWhite);
-    margin: 0 0 10px;
-    font-weight: 600;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#media .container .music-category .audio-sample audio{
+#media .music-category .favourite iframe{
     width: 100%;
+    max-width: 250px;
+    box-shadow:  0 0 2px rgb(241, 243, 241);
+}
+#media .music-category .embeded-spotify iframe{
+    width: 600px;
+    height: 788px;
+    box-shadow: 0 0 10px rgb(33, 130, 65);    
+}
+/* Hip hop songs end */
+
+
+
+/* R%B songs start */
+#media .music-category-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 100px;
 }
 
-#media .container h1{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+#media .music-category-2 .embeded-spotify {
+    flex-shrink: 0;
 }
 
-#media .container h2{
-    color: #EEF4ED;
+#media .music-category-2 .favourite {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px; /* Adjust as needed */
+}
+
+#media .music-category-2 .favourite .txt {
+    grid-column: span 3;
     text-align: center;
-    font-size: 2em;
-    margin: 10px 0 20px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 800;
+    color: var(--textColorWhite);
+    padding-bottom: 10px;
 }
 
+#media .music-category-2 .favourite iframe {
+    width: 100%;
+    max-width: 250px;
+    box-shadow:  0 0 2px rgb(241, 243, 241);
+}
 
+#media .music-category-2 .embeded-spotify-2 iframe {
+    width: 600px;
+    height: 788px;
+    box-shadow: 0 0px 10px rgb(33, 130, 65);
+}
+/* R%B songs end */
+
+/* Pop songs start */
+#media .music-category-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+#media .music-category-3 .favourite .txt{
+    grid-column: span 3;
+    text-align: center;
+    color: var(--textColorWhite);
+    padding-bottom: 10px;    
+}
+
+#media .music-category-3 .favourite {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+
+#media .music-category-3 .favourite iframe{
+    width: 100%;
+    max-width: 250px;
+    box-shadow:  0 0 2px rgb(241, 243, 241);
+}
+#media .music-category-3 .embeded-spotify-3 iframe{
+    width: 600px;
+    height: 788px;
+    box-shadow: 0 0 10px rgb(33, 130, 65);    
+}
+/* Pop songs end */
 
 /* MEdia section */

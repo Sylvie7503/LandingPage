@@ -328,7 +328,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 /* ----------------------------------------------------------------- */
 
 /* MEdia section */
-#film {
+#film{
     padding: 70px 30px;
 }
 
@@ -353,7 +353,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     padding-bottom: 30px;
 }
 
-#film .section{
+/* #film .section{
     background-color: var(--iconBGColor);
     margin-bottom: 20px;
     padding: 20px;
@@ -407,9 +407,214 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     transform: scale(1.05); 
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+} */
+
+
+/* Tv shows */
+#film .title-1 {
+    text-align: center;
+    color: var(--textColorWhite);
+    margin: 25px;
 }
 
+#film .title-1 h1{
+    font-size: 55px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+#film .title-1 p{
+    font-size: 20px;
+    color: var(--textColorWhite);
+}
 
+/* TV shows */
 
+#film .tv-show h2{
+    padding-top: 100px;
+    color: var(--textColorWhite);
+    font-weight: 500;
+}
 
+#film .tv-show .film-row {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px; /* No gap between grid items */
+    justify-content: center;
+    align-items: center;
+}
+
+#film .tv-show .film-row .film-item {
+    position: relative;
+    border-radius: 0; /* Remove border-radius if you want them tightly packed */
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ensure it takes full grid width */
+    height: 100%; /* Ensure it takes full grid height */
+}
+
+#film .tv-show .film-row .film-item .film-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the image fills the container */
+    border-radius: 11px; /* Optional: remove border radius for a seamless grid */
+}
+
+#film .tv-show .film-row .film-item .film-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Slight transparency */
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#film .tv-show .film-row .film-item:hover .film-info {
+    transform: scale(1);
+    visibility: visible;
+}
+
+#film .tv-show .film-row .film-item .film-info h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#film .tv-show .film-row .film-item .film-info p {
+    color: white;
+    font-size: 14px;
+}
+
+#film .tv-show .film-row .film-item .film-info a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--iconBGColor);
+    border-radius: 50%;
+    color: var(--themeColor);
+    line-height: 40px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#film .tv-show .film-row .film-item .film-info a:hover {
+    background-color: var(--sideBGColor);
+}
+
+/* Tv shows */
+#film .title-1 {
+    text-align: center;
+    color: var(--textColorWhite);
+    margin: 25px;
+}
+
+#film .title-1 h1{
+    font-size: 55px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+#film .title-1 p{
+    font-size: 20px;
+    color: var(--textColorWhite);
+}
+
+/* Movies */
+
+#film .movie h2{
+    padding-top: 100px;
+    color: var(--textColorWhite);
+    font-weight: 500;
+}
+
+#film .movie .movie-row {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px; /* No gap between grid items */
+    justify-content: center;
+    align-items: center;
+}
+
+#film .movie .movie-row .movie-item {
+    position: relative;
+    border-radius: 0; /* Remove border-radius if you want them tightly packed */
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ensure it takes full grid width */
+    height: 100%; /* Ensure it takes full grid height */
+}
+
+#film .movie .movie-row .movie-item .movie-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Makes sure the image fills the container */
+    border-radius: 11px; /* Optional: remove border radius for a seamless grid */
+}
+
+#film .movie .movie-row .movie-item .movie-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Slight transparency */
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+#film .movie .movie-row .movie-item:hover .movie-info {
+    transform: scale(1);
+    visibility: visible;
+}
+
+#film .movie .movie-row .movie-item .movie-info h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#film .movie .movie-row .movie-item .movie-info p {
+    color: white;
+    font-size: 14px;
+}
+
+#film .movie .movie-row .movie-item .movie-info a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--iconBGColor);
+    border-radius: 50%;
+    color: var(--themeColor);
+    line-height: 40px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#film .movie .movie-row .movie-item .movie-info a:hover {
+    background-color: var(--sideBGColor);
+}
 /* MEdia section */
