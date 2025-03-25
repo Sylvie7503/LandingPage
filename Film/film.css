@@ -493,7 +493,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 
 #film .tv-show .film-row .film-item .film-info p {
     color: white;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #film .tv-show .film-row .film-item .film-info a {
@@ -597,7 +597,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 
 #film .movie .movie-row .movie-item .movie-info p {
     color: white;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #film .movie .movie-row .movie-item .movie-info a {
