@@ -47,6 +47,7 @@ header{
     bottom: 0;
     transition: 0.4s;
     z-index: 99;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 header .profile{
     text-align: center;
@@ -288,7 +289,6 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 #gallery .sub-heading{
     color: whitesmoke;
     font-size: 30px;
-    margin-bottom: 10px;
 }
 #gallery .divider{
     width: 80px;

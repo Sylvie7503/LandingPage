@@ -45,6 +45,7 @@ header{
     bottom: 0;
     transition: 0.4s;
     z-index: 99;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 header .profile{
     text-align: center;
@@ -284,10 +285,10 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 #resume .box{
     max-width: 850px;
     margin: 30px auto;
-    background: #ffffff;
+    background: var(--bgColor);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(243, 239, 239, 0.1);
 }
 
 #resume .box .header {
@@ -296,18 +297,18 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 }
 #resume .box .header h1{
     font-size: 2.5em;
-    color: #4a3828;
+    color: var(--textColorWhite);
     margin: 0;
 }
 #resume .box .header h3{
     font-size: 1.2em;
-    color: #6d5b47;
+    color: var(--textColorWhite);
     margin-top: 5px;
 }
 #resume .box .header hr{
     width: 50%;
     margin: 10px auto;
-    border: 1px solid #a67c52;
+    border: 1px solid var(--themeColor);
 }
 
 #resume .box section {
@@ -317,16 +318,16 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 
 #resume .box section h2{
     font-size: 1.8em;
-    color: #4a3828;
+    color: var(--textColorWhite);
     margin-bottom: 10px;
-    border-bottom: 2px solid #6d5b47;
+    border-bottom: 2px solid var(--themeColor);
     
 }
 
 #resume .box section p{
     line-height: 1.6;
     text-align: justify;
-    color: #555;
+    color: rgb(220, 214, 214);
 }
 #resume .box section ul ol{
     margin: 10px 0;
@@ -334,12 +335,12 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 }
 #resume .box section li{
     margin-bottom: 5px;
-
+    color: rgb(220, 214, 214);
 }
 #resume .box .footer{
     text-align: center;
     font-size: 0.9em;
-    color: #999;
+    color: rgb(220, 214, 214);
 }
 
 /* ===== RESUME SECTION END ====== */

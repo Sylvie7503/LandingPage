@@ -224,58 +224,6 @@ header .bio-dropdown .dropdown #bio-dropdown-toggle:checked + .dropdown-btn .arr
 
 
 /* Dropdown */
-header  .bio-dropdown{
-    color: lightgray;
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 0.6px;
-}
-
-header .bio-dropdown .dropdown label:hover{
-    cursor: pointer;
-}
-
-header .bio-dropdown .dropdown i{
-    font-size: 20px;
-    padding: 7px 10px;
-    margin: 7px 0;
-}
-header .bio-dropdown .dropdown:hover label i{
-    color: var(--themeColor);
-    cursor: pointer;
-}
-
-header .bio-dropdown .dropdown-btn{
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-header .bio-dropdown .dropdown-menu{
-    display: none;
-    list-style: none;
-    padding: 10px;
-    width: 100%;
-}
-
-header .bio-dropdown .dropdown #bio-dropdown-toggle{
-    display: none;
-}
-
-header .bio-dropdown .dropdown #bio-dropdown-toggle:checked + .dropdown-btn + .dropdown-menu {
-    display: block;
-}
-
-header .bio-dropdown .dropdown .dropdown-btn .arrow {
-    display: inline-block;
-    transition: transform 0.3s;
-}
-
-header .bio-dropdown .dropdown #bio-dropdown-toggle:checked + .dropdown-btn .arrow {
-    transform: rotate(180deg);
-}
-
-
-/* Dropdown */
 header  .skill-dropdown{
     color: lightgray;
     font-weight: 300;
@@ -325,140 +273,120 @@ header .skill-dropdown .dropdown .dropdown-btn .arrow {
 header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn .arrow {
     transform: rotate(180deg);
 }
+/* ------------------------------------------------------------------------- */
 
-/* ----------------------------------------------------------------- */
 
-/* MEdia section */
-#media {
-    padding: 70px 30px;
+
+/* ======== PROJECTS SECTION START ========  */
+/* General Content Styling */
+#content {
+    padding: 20px 50px;
+    max-width: 1200px;
+    margin: auto;
+  }
+#content p{
+    color: white;
 }
-
-
-#media .sub-heading{
-    color: whitesmoke;
-    font-size: 30px;
-}
-#media .divider{
-    width: 80px;
-    height: 4px;
-    background-color: var(--themeColor);
-    border-radius: 3px;
-}
-#media .divider ~ p{
-    color: var(--textColorWhite);
-    font-size: 15px;
-    letter-spacing: 0.5px;
-    font-weight: 400;
-    margin-top: 15px;
-    margin-bottom: 50px;
-}
-
-/* Hip hop songs start */
-#media .music-category{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    padding-bottom: 100px;
-}
-#media .music-category .favourite .txt{
-    grid-column: span 3;
-    text-align: center;
-    color: var(--textColorWhite);
-    padding-bottom: 10px;    
-}
-
-#media .music-category .favourite {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-}
-
-#media .music-category .favourite iframe{
-    width: 100%;
-    max-width: 250px;
-    box-shadow:  0 0 2px rgb(241, 243, 241);
-}
-#media .music-category .embeded-spotify iframe{
-    width: 600px;
-    height: 788px;
-    box-shadow: 0 0 10px rgb(33, 130, 65);    
-}
-/* Hip hop songs end */
-
-
-
-/* R%B songs start */
-#media .music-category-2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    padding-bottom: 100px;
-}
-
-#media .music-category-2 .embeded-spotify {
-    flex-shrink: 0;
-}
-
-#media .music-category-2 .favourite {
+  h1, h2 {
+    font-family: 'Georgia', serif;
+    color: var(--themeColor);
+  }
+  
+  /* Image Grid */
+  .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-width: 800px; /* Adjust as needed */
-}
-
-#media .music-category-2 .favourite .txt {
-    grid-column: span 3;
-    text-align: center;
-    color: var(--textColorWhite);
-    padding-bottom: 10px;
-}
-
-#media .music-category-2 .favourite iframe {
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .image-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-item img {
     width: 100%;
-    max-width: 250px;
-    box-shadow:  0 0 2px rgb(241, 243, 241);
-}
-
-#media .music-category-2 .embeded-spotify-2 iframe {
-    width: 600px;
-    height: 788px;
-    box-shadow: 0 0px 10px rgb(33, 130, 65);
-}
-/* R%B songs end */
-
-/* Pop songs start */
-#media .music-category-3{
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .image-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .image-item:hover .image-description {
+    opacity: 1;
+  }
+  
+  /* Other Places Section */
+  .places {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 20px;
-}
-#media .music-category-3 .favourite .txt{
-    grid-column: span 3;
-    text-align: center;
-    color: var(--textColorWhite);
-    padding-bottom: 10px;    
-}
-
-#media .music-category-3 .favourite {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-}
-
-#media .music-category-3 .favourite iframe{
+    margin-top: 20px;
+  }
+  
+  .place {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #2E3944;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 250px;
-    box-shadow:  0 0 2px rgb(241, 243, 241);
-}
-#media .music-category-3 .embeded-spotify-3 iframe{
-    width: 600px;
-    height: 788px;
-    box-shadow: 0 0 10px rgb(33, 130, 65);    
-}
-/* Pop songs end */
+    max-width: 500px;
+  }
+  
+  .place-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Go Top Button */
+  .go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #D3D9D4;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #2E3944;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .go-top:hover {
+    background-color: #3A4754;
+    color: #00AEEF;
+  }
+  
+  
 
-/* MEdia section */
+
+
+
+/* ======== PROJECTS SECTION END  ========  */

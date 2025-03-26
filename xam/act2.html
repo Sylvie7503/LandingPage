@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE</title>
+    <style>
+        h1 {
+            color: darkblue;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .purple { background-color: #d8b4fe; }
+        .cyan { background-color: #a7f3d0; }
+        .pink { background-color: #fbcfe8; }
+        .blue { background-color: #bfdbfe; }
+        #special { background-color: #fde047; }
+    </style>
+</head>
+<body>
+    <h1>TABLES USING HTML</h1>
+    <table>
+        <!-- FIRST ROW-->
+         <tr class="purple">
+            <th> Cell Color</th>
+            <th> Cell Width</th>
+            <th> Cell Group</th>
+         </tr>
+        <tr class="cyan">
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+            <td>Cell 6</td>
+        </tr>
+    </table>
+
+    <br> 
+
+    <table> 
+        <!-- First Row-->
+        <tr> 
+            <th>&nbsp;</th>
+            <th colspan="2" id="special">Basic/Full</th>
+        </tr>
+        <!-- Second Row-->
+
+        <tr class="pink">
+            <th>Set Up</th>
+            <td rowspan="2" id="special">Free</td>
+            <td>49.99</td> 
+        </tr> 
+        <!-- Third Row-->
+
+        <tr class="blue">
+            <th>First Year</th>
+            <td>19.99</td>
+        </tr> 
+        <!-- Fourth Row-->
+        <tr> 
+            <th>Second Year</th>
+            <td>9.99</td>
+            <td>29.99</td> 
+        </tr>
+    </table>
+
+</body>
+</html>
