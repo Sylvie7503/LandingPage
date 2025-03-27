@@ -296,7 +296,6 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     margin-top: 15px;
 }
 #projects .container{
-    
     margin: auto;
     padding: 20px;
 }

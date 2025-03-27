@@ -278,32 +278,48 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 
 
 /* ======== PROJECTS SECTION START ========  */
-#projects {
-    padding: 30px;
-  }
-  
-  #projects .divider {
+#place {
+    padding: 20px 100px;
+}
+#title{
+    padding: 50px 0 0 30px;
+}
+#title .divider {
     width: 80px;
     height: 4px;
     background-color: var(--themeColor);
     border-radius: 3px;
-  }
-  
-  #projects .sub-heading ~ .sub-para {
+}
+#title .sub-heading ~ .sub-para{
     color: var(--textColorWhite);
     font-size: 15px;
     letter-spacing: 0.5px;
     font-weight: 400;
     margin-top: 15px;
-  }
+    margin-bottom: 10px;
+}
+
+#place .world-map{
+    width: 100%;
+    height: auto;   
+}
+
   
+
+
+
+
+
+
+
+
 
   /* #projects .world-map img{
     width: 100%;
     height: 100%;
   } */
 
-  .info-box {
+  /* .info-box {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
@@ -326,7 +342,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
   
   button:hover {
     background-color: darkblue;
-  }
+  } */
 
 
 
