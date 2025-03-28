@@ -281,6 +281,12 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 #projects {
     padding: 50px 30px;
 }
+
+#projects .sub-heading{
+    color: whitesmoke;
+    font-size: 30px;
+    
+}
 #projects .divider{
     width: 80px;
     height: 4px;

@@ -280,6 +280,12 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 #contact{
     padding: 70px 30px;
 }
+#contact .sub-heading{
+    color: whitesmoke;
+    font-size: 30px;
+    
+}
+
 #contact .divider{
     width: 80px;
     height: 4px;
