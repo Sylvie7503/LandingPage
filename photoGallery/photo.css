@@ -283,7 +283,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 /* ====== PHOTO GALLERY START ====== */
 
 #gallery{
-    padding: 70px 30px;
+    padding: 50px 30px;
 }
 
 #gallery .sub-heading{
@@ -374,5 +374,27 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     margin-top: 50%; */
     font-size: 15px;
     letter-spacing: 2px;
+}
+
+
+/* arrow up */
+#gallery .arrow-up {
+    width: 50px;
+    height: 50px;
+    background-color: var(--themeColor);
+    border-radius: 50%;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    bottom: 6%; /* Adjust based on need */
+    right: 2%; /* Adjust based on need */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    z-index: 999; /* Ensure it's above other content */
+}
+
+#gallery .bio-row a ~ i{
+    background-color: var(--iconBGColor);
 }
 /* ====== PHOTO GALLERY END ====== */

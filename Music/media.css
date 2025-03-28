@@ -330,7 +330,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 
 /* MEdia section */
 #media {
-    padding: 70px 30px;
+    padding: 50px 30px;
 }
 
 
@@ -380,7 +380,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     box-shadow:  0 0 2px rgb(241, 243, 241);
 }
 #media .music-category .embeded-spotify iframe{
-    width: 720px;
+    width: 600px;
     height: 788px;
     box-shadow: 0 0 10px rgb(33, 130, 65);    
 }
@@ -423,7 +423,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 }
 
 #media .music-category-2 .embeded-spotify-2 iframe {
-    width: 720px;
+    width: 600px;
     height: 788px;
     box-shadow: 0 0px 10px rgb(33, 130, 65);
 }
@@ -455,10 +455,69 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     box-shadow:  0 0 2px rgb(241, 243, 241);
 }
 #media .music-category-3 .embeded-spotify-3 iframe{
-    width: 720px;
+    width: 600px;
     height: 788px;
     box-shadow: 0 0 10px rgb(33, 130, 65);    
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    #media .music-category, #media .music-category-2, #media .music-category-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #media .embeded-spotify iframe,
+    #media .embeded-spotify-2 iframe,
+    #media .embeded-spotify-3 iframe {
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+    }
+
+    #media .favourite {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #media .music-category-2 .embeded-spotify-2 {
+        order: 1;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #media .favourite {
+        grid-template-columns: 1fr;
+    }
+
+    #media .embeded-spotify iframe,
+    #media .embeded-spotify-2 iframe,
+    #media .embeded-spotify-3 iframe {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #media .sub-heading {
+        font-size: 24px;
+    }
+
+    #media .divider ~ p {
+        font-size: 13px;
+    }
+
+    #media .favourite iframe {
+        max-width: 100%;
+    }
+
+    #media .embeded-spotify iframe,
+    #media .embeded-spotify-2 iframe,
+    #media .embeded-spotify-3 iframe {
+        height: 400px;
+    }
+}
+
+
 /* Pop songs end */
 
 /* MEdia section */

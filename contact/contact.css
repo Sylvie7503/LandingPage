@@ -302,7 +302,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     align-items: center;
     gap: 50px;
     background: var(--bgColor);
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 #contact .container .contact-info{

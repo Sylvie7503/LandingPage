@@ -330,7 +330,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 
 /* MEdia section */
 #film{
-    padding: 70px 30px;
+    padding: 50px 30px;
 }
 
 
@@ -353,61 +353,6 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     padding-bottom: 30px;
 }
 
-/* #film .section{
-    background-color: var(--iconBGColor);
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 167, 142, 1);
-}
-
-#film .section h2{
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: var(--textColorWhite);
-}
-
-#film .section .media-list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-#film .section .media-list .media-item{
-    background-color: #3F403F;
-    padding: 15px;
-    border-radius: 5px;
-    border: 2px solid #9FB8AD;
-    width: calc(33.33% - 15px); 
-    box-sizing: border-box;
-}
-#film .section .media-list .media-item h3{
-    margin: 0;
-    color: var(--textColorWhite);
-}
-
-#film .section .media-list .media-item .video-container{
-    position: relative;
-    width: 100%; 
-    padding-bottom: 56.25%; 
-    height: 0;
-    overflow: hidden;
-}
-
-#film .section .media-list .media-item .video-container iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-#film .section .media-list .media-item:hover{
-    transform: scale(1.05); 
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
-} */
 
 
 /* Tv shows */
@@ -438,7 +383,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 #film .tv-show .film-row {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px; /* No gap between grid items */
     justify-content: center;
     align-items: center;
@@ -542,7 +487,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 #film .movie .movie-row {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px; /* No gap between grid items */
     justify-content: center;
     align-items: center;

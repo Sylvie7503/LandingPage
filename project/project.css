@@ -279,7 +279,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 
 /* ======== PROJECTS SECTION START ========  */
 #projects {
-    padding: 70px 30px;
+    padding: 50px 30px;
 }
 #projects .divider{
     width: 80px;

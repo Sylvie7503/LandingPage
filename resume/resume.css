@@ -280,8 +280,20 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
 /* ======== RESUME SECTION START ========  */
 
 #resume{
-    padding: 70px 10px;
+    padding: 50px 10px;
 }
+#resume .sub-heading{
+    color: whitesmoke;
+    font-size: 30px;
+    
+}
+#resume .divider{
+    width: 80px;
+    height: 4px;
+    background-color: var(--themeColor);
+    border-radius: 3px;
+}
+
 #resume .box{
     max-width: 850px;
     margin: 30px auto;
