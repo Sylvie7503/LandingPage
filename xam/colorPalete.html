@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Color Palette</title>
+  <style>
+    :root {
+      --themeColor: #00A78E;
+      --iconBGColor: #494E52;
+      --textColorWhite: #FFFFFF;
+      --bgColor: #212021;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: Arial, sans-serif;
+      background-color: var(--bgColor);
+      color: var(--textColorWhite);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .palette {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .color-card {
+      width: 150px;
+      height: 150px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(240, 235, 235, 0.2);
+      text-align: center;
+    }
+
+    .themeColor { background-color: var(--themeColor); }
+    .iconBGColor { background-color: var(--iconBGColor); }
+    .textColorWhite { background-color: var(--textColorWhite); color: #000; }
+    .bgColor { background-color: var(--bgColor); }
+  </style>
+</head>
+<body>
+  <h1>Color Palette</h1>
+  <div class="palette">
+    <div class="color-card themeColor">
+      --themeColor<br />#00A78E
+    </div>
+    <div class="color-card iconBGColor">
+      --iconBGColor<br />#494E52
+    </div>
+    <div class="color-card textColorWhite">
+      --textColorWhite<br />#FFFFFF
+    </div>
+    <div class="color-card bgColor">
+      --bgColor<br />#212021
+    </div>
+  </div>
+</body>
+</html>

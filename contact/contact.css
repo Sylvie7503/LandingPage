@@ -431,6 +431,7 @@ header .skill-dropdown .dropdown #skill-dropdown-toggle:checked + .dropdown-btn 
     border: 20px solid var(--bgColor);
     background: var(--sideBGColor);
 }
+
 @property --a{
     syntax: '<angle>';
     inherits: false;
